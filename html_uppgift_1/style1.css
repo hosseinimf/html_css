@@ -115,4 +115,26 @@ a:link{
     text-decoration: none;
 }
 
+.box {
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 1rem;
+    text-align: center;
+}
 
+#box-1 {background: rgb(248, 244, 244);}
+#box-2 {background: rgb(248, 244, 244);}
+#box-3 {background: rgb(248, 244, 244);}
+#box-4 {background: rgb(248, 244, 244);}
+#box-5 {background: rgb(248, 244, 244);}
+#box-6 {background: rgb(248, 244, 244);}
+
+
+.grid{ 
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+}
