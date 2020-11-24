@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 .container {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding: 12px;
+    display: none;
 }
 
 html, body{
@@ -19,38 +21,37 @@ html, body{
 
 @media (min-width: 768px){
     .container{
+        display: block;
         max-width: 720px;
     }
 }
 
 @media (min-width: 1200px){
     .container{
+        display: block;
         max-width: 1140px;
     }
 }
 
 @media (min-width: 1400px){
     .container{
+        display: block;
         max-width: 1320px;
     }
 }
 
 @media (min-width: 1920px){
     .container{
+        display: block;
         max-width: 1810px;
     }
+    
 }
 
 .border {
     border-bottom: 1px solid #cccccc;
 }
 
-.navbar-top{
-    display: none;
-    
-    font-size: 16px;
-    padding: 12px 0;  
-}
 .navbar-top .border{
     opacity: 60%;
     border-bottom: 1px solid #707070;
@@ -88,14 +89,10 @@ html, body{
     font-size: 0.8rem;
 }
 .navbar-top a:hover{
-    color: #25E6C8;
+       color: #25E6C8;
 }
 
-@media (min-width: 600px){
-    .navbar-top{
-        display: block;
-    }
-}
+
 .home-contact{
     align-items: center;
     padding: 12px 0;
@@ -114,66 +111,102 @@ html, body{
 a:link{
     text-decoration: none;
 }
+.content-box{
+    background-color: #DEDEDE;
+}
+.content-1{
+    display: flex;
+    align-items: center;
+    
+}
+.text-box{
+    margin-left: 5rem;
+}
+#p-modern{
+    font-size: 60px;
+    font-family: Roboto Slab;
+    line-height: 1.1;
+    color: #363636;
+    margin: 0;
+}
+#p-description{
+    font-size: 18px;
+    font-family: Roboto;
+    color: #626262;
 
+}
 .box {
     box-sizing: border-box;
     margin: 0;  
-    padding: 1rem;
     text-align: center;
+    background: #FFFFFF;
 }
 .square-par-title p{
     font-size: 24px;
     font-family: Roboto Slab;
+    color: #363636;
 }
 .square-par-description p{
     font-size: 18px;
     font-family: Roboto;
     padding: 0.5rem 2rem;
+    color: #626262;
 }
 .box img{
-    height: 9rem;
+    height: 150px;
+    margin-top: 3rem;
     
 }
+#our-services{
+    font-size: 40px;
+    color: #363636;
+    font-family: Roboto Slab;
+}
 
-#box-1 {background: rgb(173, 126, 126);}
-#box-2 {background: rgb(117, 107, 107);}
-#box-3 {background: rgb(104, 94, 94);}
-#box-4 {background: rgb(133, 108, 108);}
-#box-5 {background: rgb(75, 55, 55);}
-#box-6 {background: rgb(112, 108, 108);}
 
 
 .grid{ 
-    padding-top: 8rem;
-    padding-bottom: 5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    
     margin: auto;
     display: grid;
     grid-template-columns: repeat(1, auto); 
         grid-template-rows: repeat(6, auto);
     justify-content: center;
+    padding-top: 2.5rem;
     
-    gap: 1rem;
-    
+    gap: 1rem;   
+}
+.grid-group{
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #F7F7F7;
+}
+.line{
+    width: 400px;
+    background-color: #25E6C8;
 }
 @media (min-width: 768px){
     .grid{
         display: grid;
         max-width: 720px;  
-        grid-template-columns: repeat(2, 370px); 
-        grid-template-rows: repeat(3, 370px); 
-        
-         
+        grid-template-columns: repeat(2, 420px); 
+        grid-template-rows: repeat(3, 420px);        
+    }
+    .box img{
+        height: 120px;
     }
 }
 @media (min-width: 1200px){
     .grid{
         display: grid;
         max-width: 1140px;  
-        grid-template-columns: repeat(3, 370px); 
-        grid-template-rows: repeat(2, 370px);     
-        
+        grid-template-columns: repeat(3, 400px); 
+        grid-template-rows: repeat(2, 400px);     
+    }
+    .line{
+        width: 430px;
     }
 }
 @media (min-width: 1400px){
@@ -189,10 +222,20 @@ a:link{
     .grid{
         display: grid;
         max-width: 1810px; 
-        grid-template-columns: repeat(3, 550px); 
-        grid-template-rows: repeat(2, 550px);  
-        
-        
+        grid-template-columns: repeat(3, 530px); 
+        grid-template-rows: repeat(2, 530px);     
+    }
+    .box img{
+        height: 200px;
+    }
+    .square-par-title p{
+        font-size: 28px;
+    }
+    .square-par-description p{
+        font-size: 22px;
+    }
+    .line{
+        width: 550px;
     }
 }
 
