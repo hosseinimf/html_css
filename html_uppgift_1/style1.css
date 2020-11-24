@@ -117,7 +117,18 @@ a:link{
 .content-1{
     display: flex;
     align-items: center;
+    padding-bottom: 0;
     
+}
+.content-2{
+    display: flex;
+    margin-top: 3rem;
+    padding-bottom: 0;
+}
+#line-2{
+    background-color: #25E6C8;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 .text-box{
     margin-left: 5rem;
@@ -187,6 +198,44 @@ a:link{
     width: 400px;
     background-color: #25E6C8;
 }
+
+.appointment-parent{
+    background-color: #2BAAEC;
+    margin-bottom: 0;
+}
+.appointment-parent .container{
+    margin-bottom: 0;
+}
+.appointment{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.appointment button{
+    background-color: #FFFFFF;
+    color: #2BAAEC;
+    font-weight: bold;
+    font-family: Roboto;
+    height: 2rem;
+    padding: 0 2rem;
+    border: none;
+    border-radius: 5px;   
+}
+.appointment p{
+    color: #FFFFFF;
+    font-family: Roboto Slab;
+    font-size: 30px;
+}
+
+.footer {
+    background-color: #267ead;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: #F3FBFF;
+    
+  }
 @media (min-width: 768px){
     .grid{
         display: grid;
