@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #F0E68C;
+  padding: 0 10px;
+}
+
+.wrapper {
+  max-width: 500px;
+  width: 100%;
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 35px;
+  box-shadow: 2px 2px 5px;
+}
+
+.wrapper .title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #706c32;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form {
+  width: 100%;
+}
+
+.wrapper .input {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wrapper label {
+  margin-bottom: 5px;
+}
+
+.wrapper input, .wrapper textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #706c32;
+  font-size: 16px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper textarea {
+  resize: none;
+}
+
+.wrapper .term {
+  flex-direction: row;
+  align-items: center;
+}
+
+.wrapper .term input {
+  width: auto;
+  margin-right: 8px;
+}
+
+.wrapper .select {
+  position: relative;
+  width: 100%;
+}
+
+.wrapper .select select {
+  width: 100%;
+  padding: 4px;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=style.css.map */
