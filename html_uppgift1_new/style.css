@@ -79,11 +79,22 @@ padding: 7px;
         max-width: 1140px;
     }
 }
+@media (min-width:1400px){
+    .container{
+        max-width: 1300px;
+    }
+    .container-topmenu{
+        max-width: 1300px;
+    }
+}
 .main-menu-right ul{
     display: none;
 }
 .main-menu{
     margin: 4rem 0;
+}
+.main-menu a:hover{
+    color: #25E6C8;
 }
 
 .main-menu-left p{
@@ -185,7 +196,7 @@ padding: 7px;
         display: block;
     }
     .text-box{
-        margin-left: 4rem;
+        margin-left: 6rem;
     }
     .show-case-flex{
         align-items: center;
@@ -217,12 +228,13 @@ padding: 7px;
     font-family: Roboto;
 }
 #about-us-line{
-    background-color: #25E6C8;
+    border: 1px solid #25E6C8;
 }
 .about-us-grid{
     display: grid;
     grid-template-columns: auto auto auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .about-us-grid p{
     font-family: Roboto Slab;
@@ -235,7 +247,7 @@ padding: 7px;
     #pic-man{
         display: block;
         width: 450px;
-        margin-left: 5rem;
+        margin-left: 10rem;
         margin-right: -50px
     }
     .about-us-flex{
@@ -258,7 +270,7 @@ padding: 7px;
     background: #FFFFFF; 
 }
 .box img{
-    height: 150px;
+    height: 110px;
     margin-top: 3rem;
     
 }
@@ -298,8 +310,8 @@ padding: 7px;
     text-align: center;
 }
 .line{
+    border: 1px solid #25E6C8;
     width: 200px;
-    background-color: #25E6C8;
 }
 @media (min-width: 768px){
     .grid{
@@ -309,21 +321,22 @@ padding: 7px;
         grid-template-rows: repeat(3, 370px);        
     }
     .box img{
-        height: 120px;
+        height: 100px;
     }
     #our-services{
         font-size: 40px;
     }
     .line{
         width: 400px;
+        
     }
 }
 @media (min-width: 992px){
     .grid{
         display: grid;
         max-width: 720px;  
-        grid-template-columns: repeat(2, 400px); 
-        grid-template-rows: repeat(3, 400px);        
+        grid-template-columns: repeat(2, 370px); 
+        grid-template-rows: repeat(3, 370px);        
     }
 }
 @media (min-width: 1200px){
@@ -341,9 +354,12 @@ padding: 7px;
     .grid{
         display: grid;
         max-width: 1320px; 
-        grid-template-columns: repeat(3, 430px); 
-        grid-template-rows: repeat(2, 430px);  
+        grid-template-columns: repeat(3, 420px); 
+        grid-template-rows: repeat(2, 420px);  
 
+    }
+    .box img{
+        height: 120px;
     }
 }
 
