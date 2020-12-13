@@ -347,5 +347,50 @@ padding: 7px;
     }
 }
 
+.appointment-parent{
+    background-color: #2BAAEC;
+    margin-bottom: 0;
+}
+.appointment{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 3rem 0;
+}
+.appointment button{
+    background-color: #FFFFFF;
+    color: #2BAAEC;
+    font-weight: bold;
+    font-family: Roboto;
+    height: 2rem;
+    padding: 0 2rem;
+    border: none;
+    border-radius: 5px;  
+    margin-top: 1rem; 
+}
+.appointment p{
+    color: #FFFFFF;
+    font-family: Roboto Slab;
+    font-size: 20px;
+    margin: 0;
+}
+@media (min-width:768px){
+    .appointment{
+       display: flex;
+    }
+    .appointment button{
+        margin: 0;
+    }
+}
+
+.footer {
+    background-color: #267ead;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: #F3FBFF;
+    
+  }
+
 
 
